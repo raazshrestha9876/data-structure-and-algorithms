@@ -8,6 +8,7 @@ int firstOccurrence(vector<int> &vec, int target)
     int start = 0;
     int end = vec.size() - 1;
     int first_occur = -1;
+    
 
     while (start <= end)
     {

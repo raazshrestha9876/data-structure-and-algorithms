@@ -9,9 +9,7 @@ int binarySearch(vector<int>& vec, int target, int start, int end) {
     if (start > end) {
         return -1;
     }
-    
     int mid = start + (end - start) / 2;
-
     if (vec[mid] == target) {
         return mid;
     } else if (vec[mid] < target) {
@@ -27,7 +25,6 @@ int main() {
     sort(vec.begin(), vec.end()); 
     int start = 0, end = vec.size() - 1;
     int result = binarySearch(vec, target, start, end);
-    
     if (result != -1) {
         cout << "The target element is found at index " << result << endl;
     } else {
